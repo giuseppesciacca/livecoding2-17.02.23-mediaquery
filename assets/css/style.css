@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div img {
+    width: 200px;
+    border: 1px solid red;
+    padding: 0.5rem;
+    margin: 0.5rem
+}
+
+@media screen and (max-width: 780px) {
+    div {
+        width: 500px;
+        margin: auto;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 568px) {
+    div {
+        flex-direction: column;
+    }
+}
